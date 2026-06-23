@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local-only docs
+CLAUDE.md
+WORKLOG.md
+TODO.md
+
+# Local-only working files (design refs, source copy, unused photos)
+images/example/
+text-*.txt
+images/jk-2.jpg
+images/jk-3.png
+images/jk-5.png
+images/diplom.jpg

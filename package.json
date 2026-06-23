@@ -1,0 +1,12 @@
+{
+  "name": "jkitanna-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Julia Kitanna — coaching website (RU/LT/EN)",
+  "scripts": {
+    "optimize-images": "node tools/optimize-images.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.1"
+  }
+}
