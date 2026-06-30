@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/"/>
+  </url>
+
+  <!-- Coaching / Запросы -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/coaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/coaching.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/coaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/coaching.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/coaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/coaching.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/coaching.html"/>
+  </url>
+
+  <!-- Services / Услуги -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/services.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/services.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/services.html"/>
+  </url>
+
+  <!-- About / Обо мне -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/about.html"/>
+  </url>
+
+  <!-- Reviews / Отзывы -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/reviews.html"/>
+  </url>
+
+  <!-- Contacts / Контакты -->
+  <url>
+    <loc>https://julijakuzinkovaite.com/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/contacts.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/lt/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/contacts.html"/>
+  </url>
+  <url>
+    <loc>https://julijakuzinkovaite.com/en/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/contacts.html"/>
+  </url>
+
+</urlset>

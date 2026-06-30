@@ -8,10 +8,34 @@ CLAUDE.md
 WORKLOG.md
 TODO.md
 
-# Local-only working files (design refs, source copy, unused photos)
+# Local-only working files (design refs, source copy)
 images/example/
 text-*.txt
+
+# Diploma scans — never publish (contain full legal name + diploma no.)
+images/diplom.jpg
+images/diplomas-jk.jpg
+
+# Image source originals — only feed tools/optimize-images.js; the web-ready
+# outputs in images/optimized/ are committed, so the site needs only those.
+# (images/1.jpg is the exception — it's used directly as a CSS background.)
+images/2.jpg
+images/3.jpg
+images/4.png
+images/5.png
+images/6.jpg
+images/background.png
+images/background-2.png
+images/jk.jpg
 images/jk-2.jpg
 images/jk-3.png
+images/jk-4.png
 images/jk-5.png
-images/diplom.jpg
+
+# Dead optimizer outputs — generated but not referenced by any page/CSS.
+images/optimized/about-sm.jpg
+images/optimized/beliefs-bg-sm.webp
+images/optimized/cta-bg-sm.jpg
+images/optimized/cta-bg-sm.webp
+images/optimized/services-bg-sm.webp
+images/optimized/zaprosy-bg-sm.webp

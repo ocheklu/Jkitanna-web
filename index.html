@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <!-- ============================================================
      RU (default). LT → /lt/  ·  EN → /en/
-     TODO before launch: replace https://jkitanna.lt with the real domain
+     TODO before launch: replace https://julijakuzinkovaite.com with the real domain
      ============================================================ -->
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#3A5E7A">
 
-  <title>Юлия — лайф-коуч | Коучинг и индивидуальные сессии</title>
+  <title>Юлия — лайф-коуч | Коучинг — индивидуальные сессии</title>
   <meta name="description" content="Тёплое коучинговое сопровождение для тех, кто хочет снова услышать себя, понять свои настоящие желания и увидеть свою внутреннюю опору. Индивидуальные сессии и коучинг пар — онлайн и офлайн.">
 
-  <link rel="canonical" href="https://jkitanna.lt/">
-  <link rel="alternate" hreflang="ru" href="https://jkitanna.lt/">
-  <link rel="alternate" hreflang="lt" href="https://jkitanna.lt/lt/">
-  <link rel="alternate" hreflang="en" href="https://jkitanna.lt/en/">
-  <link rel="alternate" hreflang="x-default" href="https://jkitanna.lt/">
+  <link rel="canonical" href="https://julijakuzinkovaite.com/">
+  <link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/">
+  <link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/">
+  <link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:locale:alternate" content="lt_LT">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:title" content="Юлия — лайф-коуч | Коучинг и индивидуальные сессии">
+  <meta property="og:title" content="Юлия — лайф-коуч | Коучинг — индивидуальные сессии">
   <meta property="og:description" content="Тёплое коучинговое сопровождение для тех, кто хочет снова услышать себя и увидеть свою внутреннюю опору.">
-  <meta property="og:url" content="https://jkitanna.lt/">
-  <meta property="og:image" content="https://jkitanna.lt/images/optimized/hero.jpg">
+  <meta property="og:url" content="https://julijakuzinkovaite.com/">
+  <meta property="og:image" content="https://julijakuzinkovaite.com/images/optimized/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,27 +45,46 @@
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://jkitanna.lt/#julia",
-        "name": "Юлия",
+        "@id": "https://julijakuzinkovaite.com/#julia",
+        "name": "Julija Kuzinkovaitė",
+        "alternateName": "Юлия",
         "jobTitle": "Лайф-коуч (ICF, Level 2)",
-        "url": "https://jkitanna.lt/",
-        "image": "https://jkitanna.lt/images/optimized/hero.jpg",
+        "url": "https://julijakuzinkovaite.com/",
+        "image": "https://julijakuzinkovaite.com/images/optimized/hero.jpg",
         "email": "jkitanna@gmail.com",
         "telephone": "+37068333121",
-        "knowsLanguage": ["ru", "lt", "en"]
+        "knowsLanguage": ["ru", "lt", "en"],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "CoachingUp International University"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "International-Level Professional Coach",
+          "description": "Окончание ICF-Level-2-аккредитованной программы (180 часов обучения), что соответствует минимальному уровню аккредитации ICF PCC.",
+          "credentialCategory": "Диплом профессионального коуча",
+          "educationalLevel": "ICF Level 2",
+          "dateCreated": "2025-09-19",
+          "identifier": "7055840234JK",
+          "recognizedBy": [
+            { "@type": "Organization", "name": "International Coaching Federation (ICF)" },
+            { "@type": "Organization", "name": "Association for Coaching (AC)" },
+            { "@type": "Organization", "name": "European Mentoring & Coaching Council (EMCC)" }
+          ]
+        }
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://jkitanna.lt/#service",
+        "@id": "https://julijakuzinkovaite.com/#service",
         "name": "Юлия — коучинг",
         "description": "Индивидуальные коуч-сессии и коучинг пар — онлайн и офлайн, на русском, литовском и английском языках.",
-        "url": "https://jkitanna.lt/",
-        "image": "https://jkitanna.lt/images/optimized/hero.jpg",
+        "url": "https://julijakuzinkovaite.com/",
+        "image": "https://julijakuzinkovaite.com/images/optimized/hero.jpg",
         "email": "jkitanna@gmail.com",
         "telephone": "+37068333121",
-        "areaServed": "LT",
+        "areaServed": ["LT", "Онлайн — по всему миру"],
         "availableLanguage": ["ru", "lt", "en"],
-        "provider": { "@id": "https://jkitanna.lt/#julia" }
+        "provider": { "@id": "https://julijakuzinkovaite.com/#julia" }
       }
     ]
   }
@@ -73,21 +98,23 @@
         <span class="brand__role">лайф-коуч</span>
       </a>
 
-      <button class="nav-toggle" aria-label="Меню" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
-
-      <nav class="nav" id="primary-nav" aria-label="Основная навигация">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="zaprosy.html">Запросы</a></li>
-          <li><a class="nav__link" href="services.html">Услуги</a></li>
-          <li><a class="nav__link" href="about.html">Обо мне</a></li>
-          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
-        </ul>
+      <div class="site-header__actions">
+        <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="coaching.html">Запросы</a></li>
+            <li><a class="nav__link" href="services.html">Услуги</a></li>
+            <li><a class="nav__link" href="about.html">Обо мне</a></li>
+            <li><a class="nav__link" href="reviews.html">Отзывы</a></li>
+            <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
         <div class="lang" aria-label="Язык">
           <a href="/" aria-current="true">RU</a><span>/</span>
           <a href="/lt/">LT</a><span>/</span>
           <a href="/en/">EN</a>
         </div>
-      </nav>
+        <button class="nav-toggle" aria-label="Меню" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -98,8 +125,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero__inner">
-          <p class="hero__intro">Тёплое коучинговое сопровождение для тех, кто хочет снова услышать себя, понять свои настоящие желания и увидеть свою внутреннюю опору.</p>
-          <a class="btn btn--primary" href="mailto:jkitanna@gmail.com?subject=%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%AE%D0%BB%D0%B8%D1%8F!%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.%0A%0A%D0%98%D0%BC%D1%8F%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20(%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%2F%20%D0%BE%D1%84%D0%BB%D0%B0%D0%B9%D0%BD)%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BD%D0%B8%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%3A%0A%0A%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE!">Записаться</a>
+          <p class="hero__intro" data-reveal>Тёплое коучинговое сопровождение для тех, кто хочет снова услышать себя, понять свои настоящие желания и увидеть свою внутреннюю опору.</p>
+          <a class="btn btn--primary" data-reveal href="mailto:jkitanna@gmail.com?subject=%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%AE%D0%BB%D0%B8%D1%8F!%0A%0A%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.%0A%0A%D0%98%D0%BC%D1%8F%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20(%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%2F%20%D0%BE%D1%84%D0%BB%D0%B0%D0%B9%D0%BD)%3A%0A%D0%A3%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BD%D0%B8%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%3A%0A%0A%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE!">Записаться</a>
         </div>
       </div>
     </section>
@@ -112,6 +139,15 @@
       <p class="quotebar__quote">Все наши мечты могут сбыться, если у нас хватит смелости следовать им. <cite>— Уолт Дисней</cite></p>
     </div>
   </footer>
+
+  <!-- Mobile-only quick links: full-width strips under the quote bar -->
+  <nav class="strip-nav" aria-label="Разделы сайта">
+    <a class="strip-nav__item" href="coaching.html" data-reveal>Запросы</a>
+    <a class="strip-nav__item" href="services.html" data-reveal>Услуги</a>
+    <a class="strip-nav__item" href="about.html" data-reveal>Обо мне</a>
+    <a class="strip-nav__item" href="reviews.html" data-reveal>Отзывы</a>
+    <a class="strip-nav__item" href="contacts.html" data-reveal>Контакты</a>
+  </nav>
 
   <script src="js/main.js"></script>
 </body>

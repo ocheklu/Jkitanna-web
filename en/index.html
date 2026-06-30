@@ -3,24 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#3A5E7A">
 
-  <title>Julia — Life Coach | Coaching &amp; Individual Sessions</title>
+  <title>Julia — Life Coach | Coaching — Individual Sessions</title>
   <meta name="description" content="Warm, supportive coaching for those who want to find a true connection with themselves, understand their real desires, and discover their inner core. Individual sessions and couples coaching — online or in person.">
 
-  <link rel="canonical" href="https://jkitanna.lt/en/">
-  <link rel="alternate" hreflang="ru" href="https://jkitanna.lt/">
-  <link rel="alternate" hreflang="lt" href="https://jkitanna.lt/lt/">
-  <link rel="alternate" hreflang="en" href="https://jkitanna.lt/en/">
-  <link rel="alternate" hreflang="x-default" href="https://jkitanna.lt/">
+  <link rel="canonical" href="https://julijakuzinkovaite.com/en/">
+  <link rel="alternate" hreflang="ru" href="https://julijakuzinkovaite.com/">
+  <link rel="alternate" hreflang="lt" href="https://julijakuzinkovaite.com/lt/">
+  <link rel="alternate" hreflang="en" href="https://julijakuzinkovaite.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://julijakuzinkovaite.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ru_RU">
   <meta property="og:locale:alternate" content="lt_LT">
-  <meta property="og:title" content="Julia — Life Coach | Coaching &amp; Individual Sessions">
+  <meta property="og:title" content="Julia — Life Coach | Coaching — Individual Sessions">
   <meta property="og:description" content="Warm, supportive coaching for those who want to reconnect with themselves and discover their inner core.">
-  <meta property="og:url" content="https://jkitanna.lt/en/">
-  <meta property="og:image" content="https://jkitanna.lt/images/optimized/hero.jpg">
+  <meta property="og:url" content="https://julijakuzinkovaite.com/en/">
+  <meta property="og:image" content="https://julijakuzinkovaite.com/images/optimized/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,27 +39,46 @@
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://jkitanna.lt/#julia",
-        "name": "Julia",
+        "@id": "https://julijakuzinkovaite.com/#julia",
+        "name": "Julija Kuzinkovaitė",
+        "alternateName": "Julia",
         "jobTitle": "Life Coach (ICF, Level 2)",
-        "url": "https://jkitanna.lt/en/",
-        "image": "https://jkitanna.lt/images/optimized/hero.jpg",
+        "url": "https://julijakuzinkovaite.com/en/",
+        "image": "https://julijakuzinkovaite.com/images/optimized/hero.jpg",
         "email": "jkitanna@gmail.com",
         "telephone": "+37068333121",
-        "knowsLanguage": ["en", "lt", "ru"]
+        "knowsLanguage": ["en", "lt", "ru"],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "CoachingUp International University"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "International-Level Professional Coach",
+          "description": "Completion of an ICF Level 2 accredited program (180 training hours), meeting the minimum level of ICF PCC accreditation.",
+          "credentialCategory": "Professional coaching diploma",
+          "educationalLevel": "ICF Level 2",
+          "dateCreated": "2025-09-19",
+          "identifier": "7055840234JK",
+          "recognizedBy": [
+            { "@type": "Organization", "name": "International Coaching Federation (ICF)" },
+            { "@type": "Organization", "name": "Association for Coaching (AC)" },
+            { "@type": "Organization", "name": "European Mentoring & Coaching Council (EMCC)" }
+          ]
+        }
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://jkitanna.lt/#service",
+        "@id": "https://julijakuzinkovaite.com/#service",
         "name": "Julia — Coaching",
         "description": "Individual coaching sessions and couples coaching — online or in person, in English, Lithuanian and Russian.",
-        "url": "https://jkitanna.lt/en/",
-        "image": "https://jkitanna.lt/images/optimized/hero.jpg",
+        "url": "https://julijakuzinkovaite.com/en/",
+        "image": "https://julijakuzinkovaite.com/images/optimized/hero.jpg",
         "email": "jkitanna@gmail.com",
         "telephone": "+37068333121",
-        "areaServed": "LT",
+        "areaServed": ["LT", "Online — worldwide"],
         "availableLanguage": ["en", "lt", "ru"],
-        "provider": { "@id": "https://jkitanna.lt/#julia" }
+        "provider": { "@id": "https://julijakuzinkovaite.com/#julia" }
       }
     ]
   }
@@ -67,21 +92,23 @@
         <span class="brand__role">life coach</span>
       </a>
 
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
-
-      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="zaprosy.html">Coaching</a></li>
-          <li><a class="nav__link" href="services.html">Services</a></li>
-          <li><a class="nav__link" href="about.html">About</a></li>
-          <li><a class="nav__link" href="contacts.html">Contact</a></li>
-        </ul>
+      <div class="site-header__actions">
+        <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="coaching.html">Coaching</a></li>
+            <li><a class="nav__link" href="services.html">Services</a></li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="reviews.html">Reviews</a></li>
+            <li><a class="nav__link" href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
         <div class="lang" aria-label="Language">
           <a href="/">RU</a><span>/</span>
           <a href="/lt/">LT</a><span>/</span>
           <a href="/en/" aria-current="true">EN</a>
         </div>
-      </nav>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -92,8 +119,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero__inner">
-          <p class="hero__intro">Warm, supportive coaching for those who want to find a true connection with themselves, understand their real desires, and discover their inner core.</p>
-          <a class="btn btn--primary" href="mailto:jkitanna@gmail.com?subject=Registration&body=Hello%20Julia%2C%0A%0AI%20would%20like%20to%20book%20a%20session.%0A%0AName%3A%0APreferred%20format%20(online%20%2F%20in%20person)%3A%0APreferred%20days%20and%20time%3A%0ALanguage%3A%0A%0AThank%20you!">Book a Session</a>
+          <p class="hero__intro" data-reveal>Warm, supportive coaching for those who want to find a true connection with themselves, understand their real desires, and discover their inner core.</p>
+          <a class="btn btn--primary" data-reveal href="mailto:jkitanna@gmail.com?subject=Book%20a%20session&body=Hello%20Julia%2C%0A%0AI%20would%20like%20to%20book%20a%20session.%0A%0AName%3A%0APreferred%20format%20(online%20%2F%20in%20person)%3A%0APreferred%20days%20and%20time%3A%0ALanguage%3A%0A%0AThank%20you!">Book a Session</a>
         </div>
       </div>
     </section>
@@ -106,6 +133,15 @@
       <p class="quotebar__quote">All our dreams can come true if we have the courage to pursue them. <cite>— Walt Disney</cite></p>
     </div>
   </footer>
+
+  <!-- Mobile-only quick links: full-width strips under the quote bar -->
+  <nav class="strip-nav" aria-label="Site sections">
+    <a class="strip-nav__item" href="coaching.html" data-reveal>Coaching</a>
+    <a class="strip-nav__item" href="services.html" data-reveal>Services</a>
+    <a class="strip-nav__item" href="about.html" data-reveal>About</a>
+    <a class="strip-nav__item" href="reviews.html" data-reveal>Reviews</a>
+    <a class="strip-nav__item" href="contacts.html" data-reveal>Contact</a>
+  </nav>
 
   <script src="../js/main.js"></script>
 </body>

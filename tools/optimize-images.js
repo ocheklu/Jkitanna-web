@@ -16,6 +16,14 @@ const jobs = [
   { src: 'jk.jpg',          base: 'about',      widths: [1000, 700], quality: 80, jpgFallback: true },
   { src: 'background.png',  base: 'services-bg', widths: [1920, 960], quality: 68, jpgFallback: false },
   { src: 'background-2.png', base: 'zaprosy-bg', widths: [1920, 960], quality: 68, jpgFallback: false },
+  { src: '2.jpg',           base: 'beliefs-bg', widths: [2000, 1000], quality: 70, jpgFallback: false },
+  { src: '3.jpg',           base: 'cta-bg',     widths: [1600, 900], quality: 72, jpgFallback: true, rotate: 90 },
+  // Mobile quick-link strip backgrounds (airy, pale photos under the section names)
+  { src: '1.jpg', base: 'strip1', widths: [1000], quality: 72, jpgFallback: true },
+  { src: '2.jpg', base: 'strip2', widths: [1000], quality: 72, jpgFallback: true },
+  { src: '3.jpg', base: 'strip3', widths: [1000], quality: 72, jpgFallback: true },
+  { src: '4.png', base: 'strip4', widths: [1000], quality: 72, jpgFallback: true },
+  { src: '6.jpg', base: 'strip5', widths: [1000], quality: 72, jpgFallback: true },
 ];
 
 async function run() {
@@ -26,12 +34,16 @@ async function run() {
       continue;
     }
     const meta = await sharp(srcPath).metadata();
+    // After a 90°/270° rotate the usable width comes from the source height.
+    const rotated = job.rotate === 90 || job.rotate === 270;
+    const srcW = rotated ? meta.height : meta.width;
+    const start = () => (job.rotate ? sharp(srcPath).rotate(job.rotate) : sharp(srcPath));
     for (const w of job.widths) {
       const suffix = w === Math.max(...job.widths) ? '' : '-sm';
-      const targetW = Math.min(w, meta.width);
+      const targetW = Math.min(w, srcW);
 
       const webpName = `${job.base}${suffix}.webp`;
-      await sharp(srcPath)
+      await start()
         .resize({ width: targetW, withoutEnlargement: true })
         .webp({ quality: job.quality })
         .toFile(path.join(OUT, webpName));
@@ -39,7 +51,7 @@ async function run() {
 
       if (job.jpgFallback) {
         const jpgName = `${job.base}${suffix}.jpg`;
-        await sharp(srcPath)
+        await start()
           .resize({ width: targetW, withoutEnlargement: true })
           .jpeg({ quality: job.quality, mozjpeg: true })
           .toFile(path.join(OUT, jpgName));
