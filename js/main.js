@@ -19,6 +19,60 @@
   });
 })();
 
+/* Language pill on phones — folded to the current language, tap unfurls the rest */
+(function () {
+  var lang = document.querySelector('.lang');
+  if (!lang) return;
+  var current = lang.querySelector('a[aria-current="true"]');
+  if (!current) return;
+
+  var mq = window.matchMedia('(max-width: 860px)');
+  var labels = { ru: 'Выбрать язык', lt: 'Pasirinkti kalbą', en: 'Choose language' };
+  var label = labels[(document.documentElement.lang || 'ru').slice(0, 2)] || labels.ru;
+
+  function setOpen(open) {
+    lang.setAttribute('data-open', String(open));
+    current.setAttribute('aria-expanded', String(open));
+  }
+
+  function sync() {
+    if (mq.matches) {
+      lang.setAttribute('data-collapsible', 'true');
+      current.setAttribute('role', 'button');
+      current.setAttribute('aria-label', label);
+      setOpen(lang.getAttribute('data-open') === 'true');
+    } else {
+      lang.removeAttribute('data-collapsible');
+      lang.setAttribute('data-open', 'false');
+      current.removeAttribute('role');
+      current.removeAttribute('aria-expanded');
+      current.removeAttribute('aria-label');
+    }
+  }
+  sync();
+
+  if (mq.addEventListener) mq.addEventListener('change', sync);
+  else if (mq.addListener) mq.addListener(sync);
+
+  // The current language is a link to the page we are on, so on phones it does
+  // no navigating — it just folds the pill open and shut.
+  current.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    e.preventDefault();
+    setOpen(lang.getAttribute('data-open') !== 'true');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    if (lang.getAttribute('data-open') !== 'true') return;
+    if (!e.target.closest('.lang')) setOpen(false);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lang.getAttribute('data-open') === 'true') setOpen(false);
+  });
+})();
+
 /* Credential badge — tap to unfold its detail (matters on touch; desktop hovers) */
 (function () {
   var badges = document.querySelectorAll('.cred-badge--info');

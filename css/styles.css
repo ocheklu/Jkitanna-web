@@ -123,10 +123,11 @@ p { margin: 0 0 1.1rem; }
 .site-header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1.5rem;
   min-height: 78px;
 }
+/* Brand + CTA sit together on the left; the nav / language cluster keeps right. */
+.site-header__actions { margin-left: auto; }
 .brand { line-height: 1.1; }
 .brand__name { font-family: var(--font-head); font-size: 1.7rem; color: var(--color-primary); font-weight: 600; }
 .brand__role { display: block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--color-secondary); }
@@ -134,6 +135,29 @@ p { margin: 0 0 1.1rem; }
    "Юлия" lacks, so it nearly grazes the role line below. Give the name a touch
    more breathing room in LT/EN only — RU stays untouched. */
 :is(html[lang="lt"], html[lang="en"]) .brand__name { display: block; margin-bottom: .14rem; }
+
+/* Header CTA — the same quiet pill as the language switcher, only softer:
+   outline instead of fill, and it only warms to sage on hover. */
+.header-cta {
+  flex: none;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: .55rem 1.25rem;
+  white-space: nowrap;
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, .55);
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  animation: lang-in .6s ease both .1s;
+  transition: color .25s ease, background-color .25s ease, border-color .25s ease, transform .2s ease;
+}
+.header-cta:hover {
+  color: #fff;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.header-cta:active { transform: scale(.96); }
 
 .site-header__actions { display: flex; align-items: center; gap: 2rem; }
 .nav { display: flex; align-items: center; gap: 2rem; }
@@ -153,6 +177,8 @@ p { margin: 0 0 1.1rem; }
    hidden; active language is the filled sage-blue chip. Gentle entrance on load
    and tactile press feedback. */
 .lang {
+  --lang-pad-x: .55rem;
+  --lang-pad-y: .28rem;
   display: flex; align-items: center; gap: .15rem;
   padding: .2rem; font-size: .8rem;
   border: 1px solid var(--color-line); border-radius: 999px;
@@ -162,7 +188,7 @@ p { margin: 0 0 1.1rem; }
 .lang span { display: none; }
 .lang a {
   color: var(--color-muted); font-weight: 600; letter-spacing: .04em;
-  padding: .28rem .55rem; border-radius: 999px; line-height: 1;
+  padding: var(--lang-pad-y) var(--lang-pad-x); border-radius: 999px; line-height: 1;
   transition: color .25s ease, background-color .25s ease, transform .2s ease;
 }
 .lang a:hover { color: var(--color-primary); }
@@ -811,6 +837,42 @@ p { margin: 0 0 1.1rem; }
   .nav-toggle { display: block; }
   /* Right cluster on mobile: language pill sits to the LEFT of the hamburger. */
   .site-header__actions { gap: .8rem; }
+  /* The CTA stays in the header on phones: same quiet blue pill as on desktop,
+     but lowercase and slimmer, so it sits level with the language pill. */
+  .site-header__inner { gap: .7rem; }
+  .header-cta {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    text-transform: lowercase;
+    padding: .34rem 1rem;
+  }
+  /* No sage on touch — a tap turns it deep blue, matching the active language. */
+  .header-cta:hover, .header-cta:active {
+    color: #fff;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  /* Language pill folds down to the current language; tapping it unfurls the
+     other two sideways, which frees the width the CTA needs. */
+  .lang[data-collapsible="true"] a:not([aria-current="true"]) {
+    max-width: 0; padding-inline: 0; opacity: 0;
+    overflow: hidden; pointer-events: none;
+    transition: max-width .3s ease, padding .3s ease, opacity .2s ease;
+  }
+  .lang[data-collapsible="true"][data-open="true"] a:not([aria-current="true"]) {
+    max-width: 4rem; padding-inline: var(--lang-pad-x); opacity: 1; pointer-events: auto;
+  }
+  /* Small caret hints there is more behind the current language. */
+  .lang[data-collapsible="true"]::after {
+    content: ""; margin: 0 .3rem 0 .05rem;
+    border: 3.5px solid transparent;
+    border-top: 4px solid var(--color-muted);
+    transform: translateY(2px);
+    transition: transform .3s ease;
+  }
+  .lang[data-collapsible="true"][data-open="true"]::after { transform: translateY(-2px) rotate(180deg); }
   /* Panel unfurls downward from under the header edge (clip-path reveal),
      so it never slides over the header itself. */
   .nav {
@@ -903,6 +965,8 @@ p { margin: 0 0 1.1rem; }
 .about-prose { max-width: 60ch; }
 .about-prose p { margin: 0 0 1.1rem; }
 .about-prose p:last-child { margin-bottom: 0; }
+/* Opening paragraphs — her own voice, set apart in italic. */
+.about-prose__intro { font-style: italic; }
 .about-prose h2 { margin: 0 0 .25em; }
 .about-prose h2.about-intro__exp-title { margin-top: 3.5rem; }
 
@@ -1088,7 +1152,9 @@ p { margin: 0 0 1.1rem; }
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   line-height: 1.4;
   color: var(--color-primary);
-  max-width: 38ch;
+  /* Wide enough for the invitation to stay on one line on desktop
+     (EN is the longest, ~61 characters). */
+  max-width: 64ch;
   margin: 0;
 }
 
@@ -1359,4 +1425,22 @@ textarea.field__input { resize: vertical; line-height: 1.6; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
   .review__toggle .dot { animation: none !important; opacity: .7; }
+}
+
+/* --- Narrow phones: last squeeze so the header row stays on one line -------- */
+@media (max-width: 430px) {
+  .site-header__inner { gap: .45rem; }
+  .brand__name { font-size: 1.4rem; }
+  .brand__role { font-size: .58rem; letter-spacing: .1em; }
+  .header-cta { font-size: .66rem; padding: .3rem .8rem; }
+  .site-header__actions { gap: .45rem; }
+  .lang { font-size: .7rem; --lang-pad-x: .38rem; --lang-pad-y: .24rem; }
+  .nav-toggle { width: 36px; padding: .5rem 0; }
+}
+/* Below this the four items genuinely stop fitting — drop the CTA and let the
+   menu's "contacts" link carry it. */
+@media (max-width: 349px) {
+  /* The folded language pill leaves enough room to keep the CTA even here. */
+  .header-cta { font-size: .62rem; padding: .28rem .6rem; }
+  .site-header__inner { gap: .35rem; }
 }
